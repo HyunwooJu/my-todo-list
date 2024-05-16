@@ -1,0 +1,126 @@
+/* 전역 스타일 설정 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* 배경색 설정 */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* 수직 스크롤 막기 */
+}
+
+/* 애플리케이션 전체 레이아웃 스타일 */
+.App {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 80vh; /* 고정 높이 설정 */
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* 메인 컨텐츠 스타일 */
+main {
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto; /* 내용이 넘칠 경우 수직 스크롤 설정 */
+}
+
+/* 폼 스타일 */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* 섹션 스타일 */
+section {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* 여러 줄로 배치하기 위해 flex-wrap 설정 */
+  gap: 10px; /* 카드 간의 간격 설정 */
+}
+
+li.todo-item {
+  flex: 1 1 calc(33.333% - 20px); /* 각 카드가 3개씩 한 줄에 배치되도록 설정 */
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.todo-item h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.todo-item p {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+/* 버튼 스타일 */
+.buttons {
+  display: flex;
+  justify-content: center; /* 버튼 중앙 정렬 */
+  gap: 10px;
+}
+
+.toggle-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
